@@ -1,16 +1,92 @@
-# React + Vite
+# 🚀 QuickAi – AI Productivity Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+QuickAi is a full-stack AI-powered web application that provides multiple productivity tools such as content generation, resume analysis, image generation, and background removal — all in one platform.
 
-Currently, two official plugins are available:
+🔗 **Live Repo:** https://github.com/shreeyanshi25/QuickAi
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- ✍️ **Blog Title Generator** – AI-generated SEO-friendly titles
+- 📰 **Article Writer** – Structured long-form articles using LLMs
+- 📄 **Resume Reviewer** – Resume scoring with strengths & improvement suggestions
+- 🖼️ **Image Generator** – AI image generation with multiple aspect ratios
+- 🎯 **Background Remover** – Local AI-based background removal (no cloud dependency)
+- 🧠 **Object Removal** – Planned feature (mask-based removal)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+### Frontend
+- React (Vite)
+- Tailwind CSS
+- JavaScript (ES6+)
+
+### Backend
+- Node.js
+- Express.js
+- Groq LLaMA 3.3
+- Pollinations AI
+- @imgly/background-removal-node
+
+---
+
+## 🧩 Project Structure
+QuickAi/
+├── src/ # Frontend (React)
+│ ├── components
+│ ├── pages
+│ └── App.jsx
+│
+├── server/ # Backend (Node + Express)
+│ ├── index.js
+│ ├── package.json
+│ └── .env (ignored)
+│
+├── .gitignore
+├── README.md
+├── package.json
+└── vite.config.js
+
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/shreeyanshi25/QuickAi.git
+cd QuickAi
+
+2️⃣ Frontend Setup
+npm install
+npm run dev
+
+
+Frontend runs at:
+
+http://localhost:5173
+
+3️⃣ Backend Setup
+cd server
+npm install
+node index.js
+
+
+Backend runs at:
+
+http://localhost:5000
+
+🔐 Environment Variables
+
+Create a .env file inside the server folder:
+
+OPENAI_API_KEY=your_api_key_here
+OPENAI_BASE_URL=https://api.groq.com/openai/v1
+PORT=5000
+
+
+⚠️ .env is ignored via .gitignore for security.
+
