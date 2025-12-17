@@ -1,6 +1,6 @@
 # 🚀 QuickAi – AI Productivity Platform
 
-QuickAi is a full-stack AI-powered web application that provides multiple productivity tools such as content generation, resume analysis, image generation, and background removal — all in one platform.
+QuickAi is a full-stack AI-powered productivity platform designed to centralize content creation, resume analysis, and image processing tools in a single web application.
 
 🔗 **Live Repo:** https://github.com/shreeyanshi25/QuickAi
 
@@ -14,6 +14,7 @@ QuickAi is a full-stack AI-powered web application that provides multiple produc
 - 🖼️ **Image Generator** – AI image generation with multiple aspect ratios
 - 🎯 **Background Remover** – Local AI-based background removal (no cloud dependency)
 - 🧠 **Object Removal** – Planned feature (mask-based removal)
+- ⚙️ Modular REST API architecture with clean frontend–backend separation
 
 ---
 
@@ -89,4 +90,15 @@ PORT=5000
 
 
 ⚠️ .env is ignored via .gitignore for security.
+## 📸 Screenshots
+
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### Blog Title Generator
+![Blog Title Generator](screenshots/blog-titles.png)
+
+### Background Remover
+![Background Remover](screenshots/background-remover.png)
+
 
